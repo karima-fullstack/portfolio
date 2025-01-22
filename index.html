@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+  <header>
+      <nav id="desktop-nav">
+        <div class="logo"><a id="a__profile" href="#profile">.LACHHEB</a></div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo"><a id="a__mobile__profile" href="#profile">.LACHHEB</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/bright-karima.png" alt="Karima picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Karima LACHHEB </h1>
+        <p class="section__text__p2">Passionate Software engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/karima-lachheb'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/karima-fullstack'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/dark-karima.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/skills.png"
+                alt="skills icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6+ month <br />Full stack Java/Angular developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Mathematics & informatics<br />M.Sc. Big data & cloud computing</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Web development is not just a career path for me;
+              it's a canvas where I blend creativity, logic, and innovation to craft immersive digital experiences.
+              The ability to translate ideas into tangible,interactive web applications fuels my passion for this field.
+            </p>
+          </div>
+        </div>
+      </div>
+   <!----------------------------------------------------------------------------------------------------------------------------------------------->
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring Boot</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NoSQL</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="skills icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="skills icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--------------------------------------------------------------------------------------------------------->
+    </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="project-grid">
+        <!--<div class="details-container color-container">
+          <div class="article-container">
+            <img
+                    src="./assets/p3.jpg"
+                    alt="Project 1"
+                    class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">E-commerce Application</h2>
+          <div class="btn-container">
+            <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/karima-fullstack/e-com-app/tree/master'"
+            >
+              Github
+            </button>
+            <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/karima-fullstack/e-com-app/tree/master'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        </div>-->
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+                    src="./assets/successful-authentication-jwt.png"
+                    alt="Spring Boot JWT security"
+            />
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Spring Boot JWT security</h3>
+            <div class="stack-container">
+              <span class="stack-item">Spring Boot</span>
+              <span class="stack-item">JWT</span>
+              <span class="stack-item">Security</span>
+              <span class="stack-item">API</span>
+            </div>
+            <p class="project-description">
+              A robust backend application securing RESTful APIs using Spring Boot and JWT authentication, offering scalable and secure solutions.
+            </p>
+            <div class="project-links">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/spring-boot-security-with-jwt'"
+              >
+                Github
+              </button>
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/spring-boot-security-with-jwt'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+                    src="./assets/successful-authentication-jwt.png"
+                    alt="E-commerce Application"
+            />
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">E-commerce Application</h3>
+            <div class="stack-container">
+              <span class="stack-item">Spring Boot</span>
+              <span class="stack-item">JWT</span>
+              <span class="stack-item">Security</span>
+              <span class="stack-item">API</span>
+            </div>
+            <p class="project-description">
+              A full-stack e-commerce application allowing users to browse, purchase, and manage orders efficiently with modern UI and backend integration.
+            </p>
+            <div class="project-links">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/e-com-app/tree/master'"
+              >
+                Github
+              </button>
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/e-com-app/tree/master'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+                    src="./assets/chat-room.png"
+                    alt="Basic Chat Application"
+            />
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Basic Chat Application</h3>
+            <div class="stack-container">
+              <span class="stack-item">Spring Boot</span>
+              <span class="stack-item">JWT</span>
+              <span class="stack-item">Security</span>
+              <span class="stack-item">API</span>
+            </div>
+            <p class="project-description">
+              A real-time chat application built with WebSocket for seamless communication, designed for interactive user experiences.
+            </p>
+            <div class="project-links">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/WebSocket-Simple-App/tree/master'"
+              >
+                Github
+              </button>
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/WebSocket-Simple-App/tree/master'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+                    src="./assets/product%20management.png"
+                    alt="Product CRUDS"
+            />
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Product CRUDS</h3>
+            <div class="stack-container">
+              <span class="stack-item">Spring Boot</span>
+              <span class="stack-item">JWT</span>
+              <span class="stack-item">Security</span>
+              <span class="stack-item">API</span>
+            </div>
+            <p class="project-description">
+              A JavaScript-based product management system enabling efficient creation, updating, and deletion of products with intuitive UI.
+            </p>
+            <div class="project-links">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/Js-product-crud'"
+              >
+                Github
+              </button>
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/Js-product-crud'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+                    src="./assets/p3.jpg"
+                    alt="Quiz App"
+            />
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Quiz App</h3>
+            <div class="stack-container">
+              <span class="stack-item">Spring Boot</span>
+              <span class="stack-item">JWT</span>
+              <span class="stack-item">Security</span>
+              <span class="stack-item">API</span>
+            </div>
+            <p class="project-description">
+              An engaging quiz application with dynamic question handling and scoring, offering an interactive learning experience.
+            </p>
+            <div class="project-links">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/spring-boot-security-with-jwt'"
+              >
+                Github
+              </button>
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/karima-fullstack/spring-boot-security-with-jwt'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------------------------------------------------------------------------------>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">lachhebk021@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/karima-lachheb">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <!----------------------------------------------------------------------------->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 karima lachheb. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
