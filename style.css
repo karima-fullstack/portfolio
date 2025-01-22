@@ -292,13 +292,11 @@ article .icon {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
 }
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
-
 .project-img {
   border-radius: 2rem;
   width: 90%;
@@ -315,66 +313,16 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/*.stack-container {
-  display: flex;
-  gap: 10px; !* Space between items *!
-  margin: 10px 0; !* Space between the stack and other elements *!
-}
-
-.stack-item {
-  padding: 5px 15px;
-  border: 2px solid #b9b9d3; !* Border color *!
-  border-radius: 20px; !* Rounded corners *!
-  font-size: 14px;
-  font-weight: 500;
-  color: rgb(170, 170, 185); !* Text color *!
-  text-align: center;
-  display: inline-block;
-}*/
-
-/* Card container */
-.project-card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border:2px solid rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
+.project-animation:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Image section */
-.project-image img {
-  width: 100%;
-  height: 250px;
-  display: block;
-}
-
-/* Details section */
-.project-details {
-  padding: 15px;
-  text-align: left;
-}
-
-/* Title */
-.project-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
 }
 
 /* Stack container */
 .stack-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
   margin-bottom: 10px;
 }
 
@@ -394,6 +342,7 @@ article .icon {
   line-height: 1.5;
   color: #555;
   margin-bottom: 15px;
+  text-align: start;
 }
 
 /* Links */
@@ -402,7 +351,7 @@ article .icon {
   gap: 10px;
 }
 
-.project-btn {
+/*.project-btn {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: bold;
@@ -413,7 +362,7 @@ article .icon {
   transition: background-color 0.3s ease, color 0.3s ease;
   color: black;
   border-color: rgb(163, 163, 163);
-}
+}*/
 
 
 /* CONTACT */
@@ -539,6 +488,5 @@ footer p {
   .hamburger-icon{
     margin-right: 1rem;
   }
-
 }
 
